@@ -34,7 +34,7 @@ searchBox.addEventListener("keydown", function (event)
         {
             var inputText = searchBox.value;
 
-            fetch('http://api.openweathermap.org/geo/1.0/direct?q='+ inputText+'&appid=' + apiKey)
+            fetch('https://api.openweathermap.org/geo/1.0/direct?q='+ inputText+'&appid=' + apiKey)
                 .then(response => response.json())
                 .then(data => {
                     console.log(data)
