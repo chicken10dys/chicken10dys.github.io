@@ -4,6 +4,7 @@ html {
     overflow: hidden;
     text-align: center;
     color: aliceblue;
+    cursor: default;
 }
 button {
     width: 6vw;
@@ -15,6 +16,7 @@ button {
     margin: 0.5vw;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .choice {

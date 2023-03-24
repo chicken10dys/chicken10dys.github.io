@@ -1,0 +1,19 @@
+html {
+    background: rgb(24, 26, 27);
+    text-align: center;
+    color: lightblue;
+    font-size: 1vw;
+}
+
+button {
+    height: 3vw;
+    font-size: 1vw;
+    background: rgb(24, 26, 27);
+    border-radius: 1.5vw;
+    border: 0.2vw solid #00d4ff;
+    margin: 0.5vw;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: aliceblue;
+}
