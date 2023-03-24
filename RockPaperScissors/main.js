@@ -9,6 +9,9 @@ var paperBtn = document.getElementById("paperBtn");
 var scissorsBtn = document.getElementById("scissorsBtn");
 var outputTxt = document.getElementById("status")
 
+var playerChoice = document.getElementById("playerChoice")
+var computerChoice = document.getElementById("computerChoice")
+
 rockBtn.addEventListener("click", Rock);
 paperBtn.addEventListener("click", Paper);
 scissorsBtn.addEventListener("click", Scissors);
@@ -20,16 +23,23 @@ function Rock(){
     if (selection === rock)
     {
         outputTxt.innerHTML = "Tie"
+        playerChoice.innerHTML = "You: 🪨"
+        computerChoice.innerHTML = "Computer: 🪨"
+
         console.log("Tie")
     }
     if (selection === paper)
     {
         outputTxt.innerHTML = "You lost :("
+        playerChoice.innerHTML = "You: 🪨"
+        computerChoice.innerHTML = "Computer: 📄"
         console.log("You lost :(")
     }
     if (selection === scissors)
     {
         outputTxt.innerHTML = "You win!"
+        playerChoice.innerHTML = "You: 🪨"
+        computerChoice.innerHTML = "Computer: ✂️"
         console.log("You win!")
     }
 
@@ -41,16 +51,22 @@ function Paper(){
     if (selection === rock)
     {
         outputTxt.innerHTML = "You win!"
+        playerChoice.innerHTML = "You: 📄"
+        computerChoice.innerHTML = "Computer: 🪨"
         console.log("You win!")
     }
     if (selection === paper)
     {
         outputTxt.innerHTML = "Tie"
+        playerChoice.innerHTML = "You: 📄"
+        computerChoice.innerHTML = "Computer: 📄"
         console.log("Tie")
     }
     if (selection === scissors)
     {
         outputTxt.innerHTML = "You lost :("
+        playerChoice.innerHTML = "You: 📄"
+        computerChoice.innerHTML = "Computer: ✂️"
         console.log("You lost :(")
     }
 }
@@ -61,16 +77,22 @@ function Scissors(){
     if (selection === rock)
     {
         outputTxt.innerHTML = "You lost :("
+        playerChoice.innerHTML = "You: ✂️"
+        computerChoice.innerHTML = "Computer: 🪨"
         console.log("You lost :(")
     }
     if (selection === paper)
     {
         outputTxt.innerHTML = "You win!"
+        playerChoice.innerHTML = "You: ✂️"
+        computerChoice.innerHTML = "Computer: 📄"
         console.log("You win!")
     }
     if (selection === scissors)
     {
         outputTxt.innerHTML = "Tie"
+        playerChoice.innerHTML = "You: ✂️"
+        computerChoice.innerHTML = "Computer: ✂️"
         console.log("Tie")
     }
 }
